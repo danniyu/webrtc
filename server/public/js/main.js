@@ -66,7 +66,7 @@
 
 	function onGetUserMediaSuccess(stream) {
 		log('DEBUG: [RTC] getUserMedia success', stream);
-
+		console.log("success!!");
 		// set the src of the video creaing an URL from the local stream
 		dom.localVideo.src = URL.createObjectURL(stream);
 
@@ -80,6 +80,7 @@
 	}
 
 	function onGetUserMediaFailed(error) {
+		console.log("fail!!");
 		log('ERROR: [RTC] getUserMedia failed', error);
 	}
 

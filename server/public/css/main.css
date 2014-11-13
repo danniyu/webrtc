@@ -1,33 +1,10 @@
-@font-face {
-	font-family: 'roboto';
-	src: url('../font/Roboto-Regular.ttf');
-	font-weight: normal;
-	font-style: normal;
-}
-
-
 body {
 	padding: 20px;
 }
 
-header {
-	margin-bottom: 20px;
-	transition: margin 200ms linear;
-	-webkit-transition: margin 200ms linear;
-	-moz-transition: margin 200ms linear;
-}
-
-header.hide {
-	margin-top: -55px;
-}
-
-button, input, textarea {
-	font-family: 'roboto';
-}
-
 button {
-	background-color: #00ABD7;
-	border: 1px solid #00ABD7;
+	background-color: gray;
+	border: gray;
 	color: white;
 	cursor: pointer;
 	font-weight: bold;
@@ -54,7 +31,11 @@ input, textarea {
 }
 
 input:focus, textarea:focus {
-	border-color: #00ABD7;
+	border: 1px solid blue;
+}
+
+#join {
+	margin: 20px;
 }
 
 #local-text {
@@ -70,8 +51,7 @@ input:focus, textarea:focus {
 }
 
 .wrapper {
-	display: inline-block;
-	margin-right: 4px;
-	vertical-align: top;
-	width: 400px;
+	width: 45%;
+	float: left;
+	margin: 20px;
 }

@@ -1,32 +1,33 @@
 <!DOCTYPE html>
-<head>
-	<title>WebRTC and peerConnection</title>
-	<link rel="stylesheet" href="css/main.css">
-</head>
-<body>
+<html>
+  <head>
+    <title>WebRTC and peerConnection</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
 
-	<header>
-		<button id="req-new">new</button>
-		<span id="group"></span>
-		<input type="text" placeholder="group id">
-		<button id="req-join">join</button>
-	</header>
+  <body>
+    <div id="local" class="wrapper">
+      <div id="join">
+        <button id="req-new">new</button>
+        <span id="group"></span>
+        <input type="text" placeholder="group id">
+        <button id="req-join">join</button>
+      </div>
 
-	<div class="wrapper">
-		<video id="local-video"></video>
-		<textarea id="remote-text" disabled></textarea>
-		<textarea id="local-text"></textarea>
-		<button id="send">send</button>
-	</div>
+      <video id="local-video"></video>
+      <textarea id="remote-text" disabled></textarea>
+      <textarea id="local-text"></textarea>
+      <button id="send">send</button>
+    </div>
 
-	<div class="wrapper">
-		<video id="remote-video"></video>
-	</div>
+    <div id="remote" class="wrapper">
+      <video id="remote-video"></video>
+    </div>
 
-	<div id="remote-videos"></div>
+    <script src="socket.io/socket.io.js"></script>
 
-	<script src="socket.io/socket.io.js"></script>
-	
-	<script src="js/debug.js"></script>
-	<script src="js/vendor.js"></script>
-	<script src="js/main.js"></script>
+    <script src="js/debug.js"></script>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
